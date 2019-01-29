@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script src="vue.js"></script>
+        <style>
+            .fixImageSize{
+                height: 100px;
+                width: 100px;
+            }
+          
+        </style>
+    </head>
+<body>
+    <div id="my-app">
+      
+      <a target="blank" v-bind:href="ulink" v-bind:title="title">{{ name }}</a><br>
+      <img :src="imageLinke" alt="Jai Sri Ganesh" v-bind:class="{fixImageSize:isActive}"></br>
+      
+      <form method="POST">
+        <input type="text" name="" v-bind:value="txtname" placeholder="Name" autofocus>
+        <input type="text" name="" v-bind:value="txtemail" placeholder="Email" size="35">
+        <button type="submit" name="button">Submit</button>
+      </form> <br>     
+      <div v-html="htmlcontent"></div>
+    </div>
+    
+    <script src="video4.js"></script>
+</body>
+</html>
